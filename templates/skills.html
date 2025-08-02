@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="about-section">
+  <div class="about-container">
+    <h1>
+  <img src="{{ url_for('static', filename='images/profile.jpg.jpg') }}" alt="About Icon" style="width: 40px; height: 40px; border-radius: 50%; vertical-align: middle; margin-right: 10px;">
+  My skills
+</h1>
+
+    <p>Hello! I’m <strong>Md Abu Saeed</strong>, a passionate learner, entrepreneur, and aspiring full-stack developer based in Bangladesh.</p>
+
+    <div class="about-content">
+      <div class="about-card">
+        <h2>📚 Education</h2>
+        <ul>
+          <li>BSc in Physics (Dhaka College)</li>
+          <li>Completed C, C++, OOP, and Web Basics</li>
+          <li>Learning Full-Stack Development (Phitron)</li>
+        </ul>
+      </div>
+
+      <div class="about-card">
+        <h2>🏢 Experience</h2>
+        <ul>
+          <li>Founder & Manager – Prime Furniture Showroom, Jamalpur</li>
+          <li>Business experience since 2021</li>
+          <li>Hands-on experience in marketing, sales, and customer handling</li>
+        </ul>
+      </div>
+
+      <div class="about-card">
+        <h2>🧠 What I’m Doing Now</h2>
+        <p>
+          Currently focusing on:
+        </p>
+        <ul>
+          <li>Flask + HTML/CSS/JS Projects</li>
+          <li>Portfolio development</li>
+          <li>Improving my English & preparing for IELTS</li>
+          <li>Learning German for study abroad</li>
+        </ul>
+      </div>
+
+      <div class="about-card">
+        <h2>🚀 My Vision</h2>
+        <p>
+          My goal is to become a top-class software developer, study abroad, and create solutions that combine technology with real-world impact.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

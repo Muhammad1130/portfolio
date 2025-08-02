@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="projects">
+  <div class="container">
+    <h2>My Projects</h2>
+
+    <!-- Portfolio Website -->
+    <div class="project">
+      <img src="{{ url_for('static', filename='images/portfolio_site.jpeg') }}" alt="Portfolio Screenshot">
+      <div class="project-info">
+        <h3>Personal Portfolio Website</h3>
+        <p>
+          A professional personal website built with Flask, HTML, CSS, and JavaScript. It features my resume, contact form (with Formspree), dynamic pages, image gallery, and modern animations. The site is fully responsive and represents my journey, skills, and goals.
+        </p>
+        <a href="/" class="btn" target="_blank">View Live</a>
+      </div>
+    </div>
+
+    <!-- Board Exam Website -->
+    <div class="project">
+      <img src="{{ url_for('static', filename='images/board_site.jpeg') }}" alt="Board Website Screenshot">
+      <div class="project-info">
+        <h3>Board Exam Question Website</h3>
+        <p>
+          A public educational platform to share SSC & HSC board questions and solutions. Designed to be searchable, categorized by year/board/subject, and helpful for students preparing for exams.
+        </p>
+        <a href="#" class="btn" target="_blank">Coming Soon</a>
+      </div>
+    </div>
+
+    <!-- Tic Tac Toe Game -->
+    <div class="project">
+      <img src="{{ url_for('static', filename='images/tic_tac_toe.jpg') }}" alt="Tic Tac Toe Game">
+      <div class="project-info">
+        <h3>Tic Tac Toe (C Language)</h3>
+        <p>
+          A simple terminal-based Tic Tac Toe game written in C during my early programming days. This project helped build my logic, control flow, and understanding of functions and arrays.
+        </p>
+        <a href="https://github.com/yourusername/tic-tac-toe-c" class="btn" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}About Me{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="about-wrapper">
+    <div class="left">
+      <img src="{{ url_for('static', filename='images/about_photo.jpeg') }}" alt="My Photo" class="profile-img">
+    </div>
+    <div class="right">
+      <h2>About Me</h2>
+      <p class="bio">
+        I'm Md Abu Saeed — a passionate learner, developer, and physics student who thrives on creativity and discipline. I constantly explore new technologies, take on challenges, and learn from every step I take.
+      </p>
+      <p class="bio">
+        Beyond work, I’m a traveler at heart. Whenever and however I get the chance, I just travel. It refreshes my mind and gives me energy to do better in life. I've visited many beautiful places like:
+        Sitakundu Waterfall, Khoiyachora, Mohamaya Lake, Chandranath Pahar, Guliakhali Sea Beach, Cox’s Bazar, Himchori, Bandarban, Debotakhum, Sylhet, Guliya Khali, Bholaganj Sada Pathor, Jaflong, Lalakhal, Ham Ham Waterfall, Khulna, Sundarban, and the historic Shat Gombuj Mosque.
+      </p>
+    </div>
+  </div>
+</div>
+{% endblock %}

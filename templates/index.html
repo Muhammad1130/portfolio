@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section id="home" class="home-hero">
+  <div class="home-container">
+    <div class="home-image">
+      <img src="{{ url_for('static', filename='images/profile.jpg.JPG') }}" alt="Profile Photo">
+    </div>
+    <div class="home-content">
+      <h1>Hello! I'm Md Abu Saeed</h1>
+      <p><strong>Learning Path:</strong></p>
+      <ul>
+        <li>🔧 Full-Stack Development</li>
+        <li>📘 BSc in Physics (Dhaka College)</li>
+        <li>🏢 Business Owner (Furniture Showroom)</li>
+      </ul>
+
+      <p><strong>Motivation:</strong></p>
+      <p>I thrive on creating, solving, and learning something new every day. My goal is to combine tech and creativity to build something meaningful.</p>
+
+      <div class="quote-section">
+        <h2>Words That Inspire Me</h2>
+        <blockquote>
+          “Stay hungry, stay foolish.”<br>
+          — Steve Jobs
+        </blockquote>
+        <blockquote>
+          “The best way to predict the future is to invent it.”<br>
+          — Alan Kay
+        </blockquote>
+        <blockquote>
+          “Success is not final, failure is not fatal: It is the courage to continue that counts.”<br>
+          — Winston Churchill
+        </blockquote>
+      </div>
+
+      <a href="#contact" class="btn-contact">📬 Contact Me</a>
+    </div>
+  </div>
+</section>
+{% endblock %}
